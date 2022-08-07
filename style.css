@@ -20,8 +20,7 @@ body{
     font-size: 16px; /* 1 rem =  10px */
     font-family: 'Rubik', sans-serif;
     margin: auto;
-    /* background:#fdfdfd; */
-    background: #eae1e1;
+    background:#fdfdfd;
     width: 120rem; 
 }
 
@@ -33,7 +32,6 @@ body{
     /*justify-content: space-between;*/
     align-items: flex-start;
     width: fit-content;
-    background: peachpuff;
 }
 
 .lil-vector{
@@ -91,8 +89,6 @@ body{
        position: relative;
        top:2rem;
        left: 11rem;
-       background-color: palevioletred
-
     }
 
 }
@@ -102,7 +98,6 @@ body{
     display: flex;
     height: 61rem; 
     width: 90%;
-    background: #adadad54;
 }
 
 
@@ -192,7 +187,6 @@ body{
 
 .hero-right{
     width: 50%;
-    background: rgba(255, 0, 0, 0.088);
     position: relative;
     left: 16rem;
     display: flex;
@@ -231,7 +225,6 @@ body{
     position: absolute;
     left: 4rem;
     top: 22.5rem;
-    background: rgba(153, 205, 50, 0.301);
 }
 
 .icon-box{
@@ -278,22 +271,16 @@ body{
     }
     
     .icons{
-        /*background: rgba(93, 20, 58, 0.43);*/
         width: 15rem;
         height: 4rem;
         left: 10rem;
         top: 19rem;
-        
-        background: rgba(153, 205, 50, 0.301);
     }
 
 
     .icon-box > svg{
-        /*background: rgba(93, 20, 58, 0.43);*/
         width: 21px;
         height: 21px;
-        
-    
     }
     
     .icon-box{
@@ -318,11 +305,7 @@ body{
     .btn-email > svg{
         height: 2rem;
     }
-
-    /* .btn-email{
-        margin-left: 6rem;
-    } */
-    
+   
     .contact{
         font-size: 1.4rem;
         margin-right: 9rem;
@@ -338,7 +321,6 @@ body{
     margin: 10rem 7rem;
     text-align: justify;
     width: 120rem;
-    background-color: rgba(255, 192, 203, 0.399);
 }
 
 .content h2{
@@ -365,7 +347,6 @@ body{
     align-items: center;
     width: 120rem;
     margin: 1rem 2rem;
-    background: #34b0be23;
   
 }
 
@@ -401,7 +382,6 @@ body{
 .box-footer{
     text-align: center;
     font-size: 2.7rem;
-    /* width: 17rem; */
 }
 
 .about{
@@ -609,13 +589,9 @@ body{
     
     .box-container{
         width: fit-content;
-        /* background: #2a1c0763; */
-     
-    
     }
     
     .habilidades{
-       background: rgba(255, 255, 0, 0.361);
        width: 35rem;
        flex-wrap: nowrap;
        justify-content: flex-start;
@@ -648,7 +624,7 @@ body{
     }
     
     .about{
-      background: rgba(0, 128, 0, 0.144);  
+      margin-left: -0.8rem; 
     }
 
     .big-vector{
@@ -666,7 +642,6 @@ body{
     }
     
     .academias{
-       background-color: blueviolet;
        flex-direction: column-reverse;
        gap: 3rem;
     } 
@@ -697,7 +672,6 @@ body{
     }
     
     .servicios{
-        background-color: red;
         flex-direction: column;
     }
     
@@ -713,7 +687,6 @@ body{
     
     .title-service{
        width: 22rem;
-       background: gold;
        font-size: 2.2rem;
        margin-bottom: 0.2rem;
         
@@ -724,7 +697,6 @@ body{
     }
     
     .portfolio{
-        background-color: black;
         height: fit-content;
         margin: auto;
         display: flex;
@@ -741,10 +713,9 @@ body{
     }
     
     .contactame{
-    background-color: greenyellow;
-    height: fit-content;
-    flex-direction: column;
-    align-items: center;
+        height: fit-content;
+        flex-direction: column;
+        align-items: center;
     }
     
     .contacta{
@@ -769,7 +740,6 @@ body{
     }
     
     .pie-web{
-       background: #ef9919;
        width: 35rem;
        margin-left: 0rem;
     }
