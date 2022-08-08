@@ -249,12 +249,13 @@ body{
     .hero{
         width: 100%;
         flex-direction: column;
-        margin: auto;
+        justify-content: center;
+        /* margin: auto; */
         padding: 0;
     }
 
     .hero-left{
-        width: 100%;
+        width: 95%;
     }
 
     .hero-vector > svg{
