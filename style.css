@@ -19,9 +19,7 @@ html{
 body{
     font-size: 16px; /* 1 rem =  10px */
     font-family: 'Rubik', sans-serif;
-    /* margin: auto; */
     background:#fdfdfd;
-    /* width: 120rem;  */
 }
 
 
@@ -30,9 +28,7 @@ body{
     margin-top: 1rem;
     display: flex;
     justify-content: center;
-    /*justify-content: space-between;*/
     align-items: flex-start;
-    /* width: fit-content; */
 }
 
 .lil-vector{
@@ -59,7 +55,6 @@ body{
 }
 
 .a-nav{
-    background: #34b0be;
     width: fit-content;
     font-size: 100%;
     font-weight: 400;
@@ -89,16 +84,11 @@ body{
     }
     .container{
         width: 100%;
-        background: rgba(37, 80, 28, 0.329);
         display: flex;
         justify-content: space-between;
         align-items: flex-start;   
     }
-    /* .flex-nav{
-        width: 100%;
-        height: 5rem;
-        background: gray;
-    } */
+   
      .a-nav{
         display: none;
         color: white;
@@ -107,17 +97,11 @@ body{
        display: block;
        margin-right:-30rem;
        margin-top: 2rem;
-       /* position: relative;
-       top:2rem;
-       left: 11rem; */
     }
 
     .burger svg{
         width: 130%;
         height: 130%;
-        /* position: relative;
-        top:2rem;
-        left: 11rem; */
     }
 
     .burger svg :hover{
@@ -129,11 +113,9 @@ body{
 
 .hero{
     display: flex;
-    /* height: 80rem; */
     height: auto;
     padding: 3rem 0;
     width: 100%;
-    background-color: gold;
 }
 
 .hero-left{
@@ -149,8 +131,6 @@ body{
     width: 100%;
     position: absolute;
     bottom: 0;
-    /* top: -3.8rem;
-    bottom: 10.8rem; */
 }
 
 .hero-vector img{
@@ -160,9 +140,6 @@ body{
     bottom: 0;
     top: -0.6rem;
     left: 8rem;
-    /* top: -10.2rem;
-    bottom: 10.8rem;
-    left: 12rem; */
 }
 
 .hero-right{
@@ -177,10 +154,6 @@ body{
 
 .hero-intro{
     margin-top: -15rem;
-    /*margin-left: -15rem; */
-    /* position: absolute;
-    top:-8rem;
-    left: 4rem; */
 }
 
 .hero-intro h2 {
@@ -199,7 +172,6 @@ body{
 }
 
 .icons{
-    /*background: rgba(93, 20, 58, 0.43);*/
     width: 50%;
     max-width: 30rem;
     height: 7rem;
@@ -207,11 +179,6 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: #ef9919;
-    margin-bottom: 3rem;
-    /* position: absolute;
-    left: 4rem;
-    top: 22.5rem; */
 }
 
 .icon-box{
@@ -234,9 +201,6 @@ body{
     width: 49rem;
     height: 1px;
     background: var(--text);
-    /* position: absolute;
-    left: 4rem;
-    top: 35rem; */
 }
 
 .contact-btn{
@@ -253,13 +217,9 @@ body{
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     margin-top: 3rem;
-    /* position: absolute;
-    left: 4rem;
-    top: 42rem */
 }
 
 .contact-btn:hover{
-    /* background-color: #34b0be;   */
     box-shadow: 0.1px 0.2px 15px #ff4f6f;
     cursor: pointer;
 }
@@ -283,18 +243,17 @@ body{
 @media (max-width: 42rem){
 
     body{
+        width: 100%;
         margin: auto;
     }
     .hero{
         width: 100%;
         flex-direction: column;
         margin: auto;
-        /* gap: 7rem; */
         padding: 0;
     }
 
     .hero-left{
-        background: pink;
         width: 100%;
     }
 
@@ -311,7 +270,6 @@ body{
         margin: auto;
         justify-content: center;
         align-items: center;
-        background: purple;
     }
 
     .hero-intro{
@@ -387,10 +345,8 @@ body{
 
 .content{
     margin: auto;
-    /* margin: 6rem 7rem; */
     text-align: justify;
     width: 90%;
-    background: pink
 }
 
 .content h2{
@@ -407,8 +363,6 @@ body{
     justify-content: space-evenly;
     align-items: center;
     width: fit-content;
-    background-color: goldenrod;
-    
 }
 
 .habilidades{
@@ -418,7 +372,6 @@ body{
     width: 100%;
     height: auto;
     margin: auto;
-    background: black;
     gap: 3rem;
     overflow: scroll;
 }
@@ -538,7 +491,6 @@ body{
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 4.5rem;
-    /* margin-left: 1rem; */
     box-shadow: 0.1px 0.2px 9px #e5e5e5;
 }
 
@@ -569,7 +521,6 @@ body{
     margin-bottom: 8rem;
     overflow: scroll;
     width: 100%;
-    background-color: #34b0be;
     padding: 4rem 0;
     gap: 3rem;
 }
@@ -644,9 +595,6 @@ body{
 }
 
 .pie-web{
-    /* position: relative;
-    top: 8rem;
-    bottom: 5rem; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -654,7 +602,6 @@ body{
     align-items: center;
     margin: auto;
     margin: 10rem 0;
-    background-color: red; 
 }
 
 .pie{
@@ -668,9 +615,12 @@ body{
 
 @media(max-width:42rem){
     .content{
-        width: 42rem; /*ANTES TENIA 35REM*/
-        margin: auto;
-        padding-left: 1.5rem;
+        width: 42rem; 
+        padding-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
     }
     
     .content h2{
