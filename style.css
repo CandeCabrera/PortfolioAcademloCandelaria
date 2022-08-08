@@ -19,42 +19,53 @@ html{
 body{
     font-size: 16px; /* 1 rem =  10px */
     font-family: 'Rubik', sans-serif;
-    margin: auto;
+    /* margin: auto; */
     background:#fdfdfd;
-    width: 120rem; 
+    /* width: 120rem;  */
 }
 
 
 .container{
-   
+    margin: auto;
     margin-top: 1rem;
     display: flex;
+    justify-content: center;
     /*justify-content: space-between;*/
     align-items: flex-start;
-    width: fit-content;
+    /* width: fit-content; */
 }
 
 .lil-vector{
     margin-top: 2rem;
     margin-left: 6rem;
 }
+.lil-vector svg{
+    width: 80%;
+}
 
 .flex-nav{
-    margin-top: 3rem;
-    margin-left: 6rem;
-    width: 120rem;
+    margin-top: 6rem;
+    margin-left: 8rem;
+    padding-right: 4rem;
+    width: fit-content;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    padding-right: 11rem;
-    padding-left: 4rem;
+    gap: 2rem
+}
+
+#main-nav{
+    width: fit-content;
 }
 
 .a-nav{
-    font-size: 2rem;
+    background: #34b0be;
+    width: fit-content;
+    font-size: 100%;
     font-weight: 400;
     text-decoration: none;
-    color: rgb(61, 58, 58);   
+    color: rgb(61, 58, 58); 
+    margin:auto; 
 }
 
 .a-nav:hover{
@@ -67,169 +78,145 @@ body{
 }
 
 @media (max-width: 42rem){
-
-    .lil-vector > svg{
-        height: 47%;
-        width: 47%;
-        margin-left: -4rem;
-    }
-    .container{
+    body{
         width: fit-content;
     }
-    .flex-nav{
-        width: 42rem;
-        position: relative;
+
+    .lil-vector > svg{
+        height: 60%;
+        width: 60%;
+        margin-left: -4rem; 
     }
+    .container{
+        width: 100%;
+        background: rgba(37, 80, 28, 0.329);
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;   
+    }
+    /* .flex-nav{
+        width: 100%;
+        height: 5rem;
+        background: gray;
+    } */
      .a-nav{
         display: none;
         color: white;
     } 
     .burger{
        display: block;
-       position: relative;
+       margin-right:-30rem;
+       margin-top: 2rem;
+       /* position: relative;
        top:2rem;
-       left: 11rem;
+       left: 11rem; */
+    }
+
+    .burger svg{
+        width: 130%;
+        height: 130%;
+        /* position: relative;
+        top:2rem;
+        left: 11rem; */
+    }
+
+    .burger svg :hover{
+        box-shadow: 0.1px 0.2px 15px #34b0be;
+        cursor: pointer;
     }
 
 }
 
 .hero{
-    margin-top: 5rem;
     display: flex;
-    height: 61rem; 
-    width: 90%;
+    /* height: 80rem; */
+    height: auto;
+    padding: 3rem 0;
+    width: 100%;
+    background-color: gold;
 }
 
+.hero-left{
+    width: 50%;
+}
 
-.hero-vector{
+.hero-vector {
+    position: relative; 
+}
+
+.hero-vector svg{
+    height: auto;
+    width: 100%;
     position: absolute;
-    top: 27rem;
+    bottom: 0;
+    /* top: -3.8rem;
+    bottom: 10.8rem; */
 }
 
-.hero-girl{
+.hero-vector img{
+    height: auto;
+    width: 75%;
     position: relative;
+    bottom: 0;
+    top: -0.6rem;
+    left: 8rem;
+    /* top: -10.2rem;
     bottom: 10.8rem;
-    left: 12rem;
+    left: 12rem; */
 }
-
-
-
-.line{
-    width: 49rem;
-    height: 1px;
-    background: var(--text);
-    position: absolute;
-    left: 4rem;
-    top: 35rem;
-}
-
-.contact-btn{
-    width: 44.5rem;
-    height: 9.5rem;
-    background-color: var(--title);
-    display: flex;
-    flex-direction: row;   
-    justify-content: space-around;
-    align-items: center;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    position: absolute;
-    left: 4rem;
-    top: 42rem
-}
-
-.contact-btn:hover{
-    /* background-color: #34b0be;   */
-    box-shadow: 0.1px 0.2px 15px #ff4f6f;
-    cursor: pointer;
-}
-
-.btn-email{
-    margin-left: 6rem;
-}
-
-.contact{
-    font-size: 3.4rem;
-    margin-right: 7rem;
-    color: white;
-}
-
-
-@media (max-width: 42rem){
-    .hero{
-        width: 120rem;
-        height: 50rem;
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-    }
-
-    .hero-vector > svg{
-        width: 32rem;
-        position: relative;
-        top: -39rem;
-        left: 2rem;
-    }
-
-    .hero-girl > img{
-        height: 35rem;
-    }
-
-    .hero-girl{
-        top: -0.8rem;
-        left: 10.5rem;
-    }
-    
-
-}
-
-
 
 .hero-right{
     width: 50%;
-    position: relative;
-    left: 16rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    margin-left: 3rem;
 }
 
+
 .hero-intro{
-    position: absolute;
+    margin-top: -15rem;
+    /*margin-left: -15rem; */
+    /* position: absolute;
     top:-8rem;
-    left: 4rem;
+    left: 4rem; */
 }
 
 .hero-intro h2 {
+    width: 90%;
     color: var(--title);
-    font-size: 4.5rem;
+    font-size: 3rem;
     font-weight: 500;
 
 }
 
 .hero-intro h1{
-    font-size: 7rem;
+    width: 90%;
+    font-size: 6rem;
     font-weight: 500;
     margin-top: -2rem;
 }
 
 .icons{
     /*background: rgba(93, 20, 58, 0.43);*/
-    width: 27rem;
-    height: 9rem;
+    width: 50%;
+    max-width: 30rem;
+    height: 7rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    position: absolute;
+    align-items: flex-start;
+    background-color: #ef9919;
+    margin-bottom: 3rem;
+    /* position: absolute;
     left: 4rem;
-    top: 22.5rem;
+    top: 22.5rem; */
 }
 
 .icon-box{
-  width: 7rem;
-  height: 7rem;
+  width: 6rem;
+  height: 6rem;
   border-radius: 50%;
   border: 1.5px solid var(--hover);
   display: flex;
@@ -243,43 +230,116 @@ body{
    
 }
 
+.line{
+    width: 49rem;
+    height: 1px;
+    background: var(--text);
+    /* position: absolute;
+    left: 4rem;
+    top: 35rem; */
+}
+
+.contact-btn{
+    width: 80%;
+    max-width: 40rem;
+    height: auto;
+    padding: 0.5rem 0;
+    background-color: var(--title);
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-top: 3rem;
+    /* position: absolute;
+    left: 4rem;
+    top: 42rem */
+}
+
+.contact-btn:hover{
+    /* background-color: #34b0be;   */
+    box-shadow: 0.1px 0.2px 15px #ff4f6f;
+    cursor: pointer;
+}
+
+.btn-email{
+    margin-left: 6rem;
+}
+
+.btn-email svg{
+    width: 70%;
+}
+
+.contact{
+    width: 50%;
+    font-size: 2.5rem;
+    margin-right: 6rem;
+    color: white;
+}
+
+
 @media (max-width: 42rem){
 
+    body{
+        margin: auto;
+    }
+    .hero{
+        width: 100%;
+        flex-direction: column;
+        margin: auto;
+        /* gap: 7rem; */
+        padding: 0;
+    }
+
+    .hero-left{
+        background: pink;
+        width: 100%;
+    }
+
+    .hero-vector > svg{
+        width: 95%;
+        margin-left: 2rem;
+    }
+    
+
     .hero-right{
-        width: 33rem;
-        height: 200rem;
-        left: -41.5rem;
+        margin-top: 3rem;
+        width: 100%; 
+        height: 40rem;
         margin: auto;
         justify-content: center;
         align-items: center;
+        background: purple;
     }
 
     .hero-intro{
-        top:2rem;
-        left: 9rem;
         text-align: center;
+        margin-top: 0;
+        margin-bottom: 1rem;
     }
     
     .hero-intro h2 {
-        font-size: 2.25rem;
-        margin-bottom: 3rem;
+        width: 100%;
+        font-size: 2.9rem;
         
     }
     
     .hero-intro h1{
-        font-size: 3.5rem;
+        font-size: 4.5rem;
     }
     
     .icons{
-        width: 15rem;
+        width: 40%;
         height: 4rem;
-        left: 10rem;
-        top: 19rem;
+        justify-content: space-around;
+        margin-bottom: 1rem;
+
     }
 
-
     .icon-box > svg{
-        width: 21px;
+        width: 90%;
         height: 21px;
     }
     
@@ -296,36 +356,46 @@ body{
     }
     
     .contact-btn{
-        width: 17.5rem;
+        margin-top: 1rem;
+        width: 35%;
         height: 3.5rem;
-        left: 9rem;
-        top: 26rem;
+        justify-content: space-around;
+        padding: 0.5rem;
     }
     
+    .btn-email{
+        width: 100%;
+        margin-right: 2.4rem;
+
+    }
     .btn-email > svg{
-        height: 2rem;
+        width: 200%;
+        margin-left: 1rem;
     }
    
     .contact{
-        font-size: 1.4rem;
-        margin-right: 9rem;
+        width: 90%;
+        font-size: 1.35rem;
+        margin-bottom: 0.2rem;
         color: white;
     }
     
 
 }
 
+
+
 .content{
-    position: relative;
-    top: 13rem;
-    margin: 10rem 7rem;
+    margin: auto;
+    /* margin: 6rem 7rem; */
     text-align: justify;
-    width: 120rem;
+    width: 90%;
+    background: pink
 }
 
 .content h2{
     color: var(--title);
-    font-size: 4.7rem;
+    font-size: 4rem;
     font-weight: 500;
     margin: 4rem 0;
     
@@ -336,18 +406,21 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    width: 24rem;
+    width: fit-content;
+    background-color: goldenrod;
+    
 }
 
 .habilidades{
     display: flex;
-    flex-wrap: wrap;
-    gap: 2rem; 
-    justify-content: center;
-    align-items: center;
-    width: 120rem;
-    margin: 1rem 2rem;
-  
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: black;
+    gap: 3rem;
+    overflow: scroll;
 }
 
 
@@ -358,13 +431,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 1rem;
     font-size: 6.3rem;
     font-weight: 500;
     box-shadow: 0.1px 0.2px 9px #e5e5e5;
     color: var(--hover);
-    position: relative;
-    z-index: -1;
 }
 
 .line2{
@@ -381,7 +451,7 @@ body{
 
 .box-footer{
     text-align: center;
-    font-size: 2.7rem;
+    font-size: 1.7rem;
 }
 
 .about{
@@ -404,7 +474,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 7rem;
+    gap: 5rem;
     margin-top: 5rem;
 }
 
@@ -453,9 +523,10 @@ body{
 
 .servicios{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 7rem;
+    flex-wrap: wrap;
+    gap: 2rem;
     margin-bottom: 8rem;
 }
 
@@ -493,16 +564,36 @@ body{
 .portfolio{
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     gap: 3.5rem;
     margin-bottom: 8rem;
-    margin-left: 1.5rem;
+    overflow: scroll;
+    width: 100%;
+    background-color: #34b0be;
+    padding: 4rem 0;
+    gap: 3rem;
 }
 
 .trabajos{
-    width: fit-content;
-    height: 27rem;
+    width: 100%;
+    height: auto;
+    padding-bottom: 2rem;
     background: white;
     box-shadow: 0.1px 0.2px 15px #cacaca;
+    overflow: scroll;
+    flex-wrap: ;
+}
+
+.img-works{
+    width: 22rem;
+    height: 16rem;
+    overflow: hidden;
+
+}
+
+.trabajos > .img-works > img{
+    height: 120%;
+    width: 100%;
 }
 
 .trabajos:hover{
@@ -513,7 +604,7 @@ body{
 .subtitle-works{
     margin-top: 0.8rem;
     margin-left: 0.9rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
@@ -553,17 +644,17 @@ body{
 }
 
 .pie-web{
-    position: relative;
+    /* position: relative;
     top: 8rem;
-    bottom: 5rem;
-    width: 100rem;
+    bottom: 5rem; */
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: auto;
-    margin-bottom: 12rem;
-    margin-left: 13rem;  
+    margin: 10rem 0;
+    background-color: red; 
 }
 
 .pie{
@@ -573,14 +664,13 @@ body{
     display: flex;
     justify-content: center;
     align-content: center;
-    padding-left: 5rem;
-   
 }
 
 @media(max-width:42rem){
     .content{
-        width: 35rem;
-        margin: 10rem 2rem;
+        width: 42rem; /*ANTES TENIA 35REM*/
+        margin: auto;
+        padding-left: 1.5rem;
     }
     
     .content h2{
@@ -592,15 +682,13 @@ body{
     }
     
     .habilidades{
-       width: 35rem;
+       width: 100%;
        flex-wrap: nowrap;
        justify-content: flex-start;
        align-items: flex-start;
        gap: 2.5rem;
-       margin-left: 0rem;
-       margin-top: -3rem;
        overflow: scroll;
-      
+       margin-bottom: 7rem;
     }
     
     
@@ -622,15 +710,12 @@ body{
     .box-footer{
        font-size: 1.6rem;
     }
-    
-    .about{
-      margin-left: -0.8rem; 
-    }
-
+   
     .big-vector{
         position: absolute;
         right: -15rem;
         top: -2rem;
+        overflow: hidden;
     }
     .big-vector > svg{
       height: 16rem;
@@ -641,6 +726,9 @@ body{
        line-height: 1.8rem;
     }
     
+    .about p{
+        line-height:2.5rem;
+    }
     .academias{
        flex-direction: column-reverse;
        gap: 3rem;
@@ -701,11 +789,13 @@ body{
         margin: auto;
         display: flex;
         justify-content: flex-start;
+        align-items: flex-start;
+        padding: 1rem;
         overflow: scroll;
     }
     
     .trabajos{
-        height: 24rem;
+        height: 21rem;
     }
 
     .trabajos > div > img{
@@ -741,7 +831,7 @@ body{
     
     .pie-web{
        width: 35rem;
-       margin-left: 0rem;
+       margin: 5rem auto;
     }
     
     .pie{
