@@ -94,15 +94,15 @@ body{
         color: white;
     } 
     .burger{
-       display: block;
-       margin-right:-30rem;
-       margin-top: 2rem;
+        width: fit-content;
+        display: block;
+        position: absolute;
+        right: 4rem;
+        top: 3.5rem;
+       /* margin-right:-30rem;
+       margin-top: 2rem; */
     }
 
-    .burger svg{
-        width: 130%;
-        height: 130%;
-    }
 
     .burger svg :hover{
         box-shadow: 0.1px 0.2px 15px #34b0be;
@@ -615,8 +615,8 @@ body{
 
 @media(max-width:42rem){
     .content{
-        width: 42rem; 
-        padding-left: 2rem;
+        width: 90%; 
+        padding: 2rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
