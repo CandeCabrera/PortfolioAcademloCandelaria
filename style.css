@@ -348,6 +348,7 @@ body{
     margin: auto;
     text-align: justify;
     width: 90%;
+    overflow: hidden;
 }
 
 .content h2{
